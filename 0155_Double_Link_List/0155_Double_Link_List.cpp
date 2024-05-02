@@ -58,10 +58,19 @@ void addNode() {
 			// if previous is still NULL, it means newNode is now the first node
 			START = newNode;
 		}
-
 	}
-	
+}
 
+bool search(int ro11No, Node** previous, Node** current)
+{
+	*previous = NULL;
+	*current = START;
+	while (*current != NULL && (*current)->noMhs != ro11No)
+	{
+		*previous = *current;
+		*current = (*current)->next;
+	}
+	return (*current != NULL);
 }
 
 
