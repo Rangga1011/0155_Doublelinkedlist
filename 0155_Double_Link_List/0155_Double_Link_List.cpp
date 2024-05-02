@@ -26,6 +26,8 @@ void addNode() {
 			cout << "\033[31Duplicate roll numbers not allowed\033[0m" << endl;
 			return;
 		}
+		// if the list empty, make the new node the start
+		newNode->next = START;   // step 3 : make the new node point the frist node
 
 
 	}
