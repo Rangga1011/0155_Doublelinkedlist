@@ -40,6 +40,7 @@ void addNode() {
 		Node* previous = NULL;  // step 1.b previous node is NULL initially
 
 		while (current != NULL && current->noMhs < newNode->noMhs) {  // step 1.c traven
+			previous = current; // step 1.d move the previous to the current node
 
 		}
 	}
