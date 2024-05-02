@@ -41,6 +41,7 @@ void addNode() {
 
 		while (current != NULL && current->noMhs < newNode->noMhs) {  // step 1.c traven
 			previous = current; // step 1.d move the previous to the current node
+			current = current->next;  // step 1.e move the current to the next
 
 		}
 	}
