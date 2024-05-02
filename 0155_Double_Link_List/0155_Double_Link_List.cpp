@@ -45,6 +45,7 @@ void addNode() {
 		}
 
 		newNode->next = current;  // step 4 make the field of the new node point
+		newNode->prev = previous; // step 5 make ethe privious field of the node point
 
 	}
 	
