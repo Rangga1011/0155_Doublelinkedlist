@@ -28,6 +28,9 @@ void addNode() {
 		}
 		// if the list empty, make the new node the start
 		newNode->next = START;   // step 3 : make the new node point the frist node
+		if (START != NULL) {
+			START->prev = newNode;  // step 4 make the firstnode point to the new node
+		}
 
 
 	}
